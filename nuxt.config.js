@@ -43,6 +43,6 @@ export default {
   },
   // Google Analytics configuration
   googleAnalytics: {
-    id: 'UA-12301-2'
+    id: 'UA-162587744-1'
   }
 }
