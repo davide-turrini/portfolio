@@ -54,9 +54,5 @@ export default {
         '^/callmebot' : '/'
       }
     }
-  },
-  // Http module
-  http: {
-    proxyHeaders: false
   }
 }

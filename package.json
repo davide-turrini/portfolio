@@ -13,8 +13,6 @@
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/proxy": "^2.1.0",
     "animejs": "^3.2.1",
-    "chart.js": "^2.9.4",
-    "chartjs-plugin-datalabels": "^0.7.0",
     "core-js": "^3.8.2",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.17.0"
