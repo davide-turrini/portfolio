@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-800 min-h-screen flex flex-col justify-center items-center">
+  <div class="bg-gray-800 min-h-screen flex flex-col justify-center items-center">
     <v-loader :show="!content" @ok="show['pointer'] = true"/>
     <template v-if="content">
       <v-pointer :show.sync="show['pointer']" @ok="show['welcome'] = true"/>
