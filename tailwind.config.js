@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        monsieur: ['Monsieur La Doulaise', 'serif'],
+        gruppo: ['Gruppo', 'serif'],
       }
     }
   }

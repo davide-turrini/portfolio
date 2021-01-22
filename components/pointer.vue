@@ -1,106 +1,59 @@
 <template>
-  <span
-    v-if="$device.isDesktop"
-    v-show="showValue"
-    class="
-    fixed z-30
-    transform -translate-y-1/2 -translate-x-1/2
-    pointer-events-none
-    text-white text-xl"
-    :class="{
-    'mdi mdi-radiobox-blank': triggers['v-pointer-outlined'],
-    'mdi mdi-circle': !triggers['v-pointer-outlined'] }"
-    :style="'top: ' + top + '; left: ' + left + ';'">
-  </span>
+  <v-transition @after-enter="$emit('ok')">
+    <span v-if="$device.isDesktop && show" class="fixed z-50 transform -translate-y-1/2 -translate-x-1/2 pointer-events-none" :class="{
+      'text-transparent bg-clip-text awesome-gradient mdi mdi-radiobox-blank text-4xl': triggers['v-pointer-link'],
+      'text-white mdi mdi-arrow-left text-2xl': triggers['v-pointer-back'],
+      'text-white mdi mdi-circle text-xl': !(triggers['v-pointer-link'] || triggers['v-pointer-back'])}" :style="'top: ' + top + '; left: ' + left + '; transition: font-size 300ms ease-in;'">
+      </span>
+  </v-transition>
 </template>
 
 <script>
+  import VTransition from './transition'
   export default {
     name: 'v-pointer',
+    components: { VTransition },
+    props: {
+      show: { type: Boolean, default: false }
+    },
+    watch: {
+      show (show) {
+        if (show && !this.$device.isDesktop) {
+          this.$emit('update:show', false)
+          this.$emit('ok')
+        }
+      }
+    },
     data () {
       return {
-        showValue: false,
-        doShow: null,
-        doHide: null,
         top: 0,
         left: 0,
         timeout: null,
         triggers: {
-          'v-pointer-outlined': false
+          'v-pointer-link': false,
+          'v-pointer-back': false
         }
       }
     },
     mounted () {
-      this.setup()
-    },
-    methods: {
-      updateTriggers () {
+      window.addEventListener('mousemove', (event) => {
+
+        // updating triggers
         document.querySelectorAll('.v-pointer:not([v-pointer-bound])').forEach(element => {
           element.setAttribute('v-pointer-bound', true)
           element.addEventListener('mouseenter', () => {
-            Object.keys(this.triggers).filter( t2 => element.classList.contains(t2)).forEach(t1 => this.triggers[t1] = true)
+            Object.keys(this.triggers).filter(t2 => element.classList.contains(t2)).forEach(t1 => this.triggers[t1] = true)
           }, false)
           element.addEventListener('mouseleave', () => {
-            Object.keys(this.triggers).filter( t2 => element.classList.contains(t2)).forEach(t1 => this.triggers[t1] = false)
+            Object.keys(this.triggers).filter(t2 => element.classList.contains(t2)).forEach(t1 => this.triggers[t1] = false)
           }, false)
         })
-      },
-      move (x,y) {
-        this.top = y + 'px'
-        this.left = x + 'px'
-      },
-      show () {
-        if (this.doHide) {
-          this.doHide.pause()
-        }
-        if (this.doShow) {
-          this.doShow.restart()
-        }
-      },
-      hide () {
-        if (this.doShow) {
-          this.doShow.pause()
-        }
-        if (this.doHide) {
-          this.doHide.restart()
-        }
-      },
-      setup () {
-        window.addEventListener('mousemove', (event) => {
-          this.updateTriggers()
-          this.move(event.clientX, event.clientY)
-        })
-        this.doShow = this.$anime({
-          autoplay: false,
-          targets: this.$el,
-          opacity: [0, 1],
-          duration: 500,
-          delay: 500,
-          easing: 'linear',
-          begin: () => {
-            this.showValue = true
-            this.$emit('showing')
-          },
-          complete: () => {
-            this.$emit('shown')
-          }
-        })
-        this.doHide = this.$anime({
-          autoplay: false,
-          targets: this.$el,
-          opacity: [1, 0],
-          duration: 500,
-          delay: 500,
-          easing: 'linear',
-          begin: () => {
-            this.$emit('hiding')
-          },
-          complete: () => {
-            this.showValue = false
-            this.$emit('hidden')
-          }
-        })
-      }
+
+        // moving pointer
+        this.top = event.clientY + 'px'
+        this.left = event.clientX + 'px'
+
+      })
     }
   }
 </script>

@@ -1,86 +1,27 @@
 <template>
-  <div
-    v-show="showValue"
-    class="
-    fixed z-50 w-screen h-screen
-    flex flex-col justify-center items-center
-    back-gradient"
-    ref="cube">
-
-    <!-- cube loader from https://tobiasahlin.com/spinkit/ start -->
-    <div class="sk-folding-cube">
-      <div class="sk-cube1 sk-cube"></div>
-      <div class="sk-cube2 sk-cube"></div>
-      <div class="sk-cube4 sk-cube"></div>
-      <div class="sk-cube3 sk-cube"></div>
+  <v-transition @after-leave="$emit('ok')">
+    <div v-if="show">
+      <div class="fixed top-0 left-0 z-50 w-screen h-screen flex flex-col justify-center items-center awesome-gradient">
+        <!-- cube loader from https://tobiasahlin.com/spinkit/ start -->
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+        <!-- cube loader from https://tobiasahlin.com/spinkit/ end -->
+      </div>
     </div>
-    <!-- cube loader from https://tobiasahlin.com/spinkit/ end -->
-
-  </div>
+  </v-transition>
 </template>
 
 <script>
+  import VTransition from './transition'
   export default {
     name: 'v-loader',
-    data () {
-     return {
-       showValue: false,
-       doStart: null,
-       doStop: null
-     }
-    },
-    mounted () {
-      this.setup()
-    },
-    methods: {
-      start () {
-        if (this.doStop) {
-          this.doStop.pause()
-        }
-        if (this.doStart) {
-          this.doStart.restart()
-        }
-      },
-      stop () {
-        if (this.doStart) {
-          this.doStart.pause()
-        }
-        if (this.doStop) {
-          this.doStop.restart()
-        }
-      },
-      setup () {
-        this.doStart = this.$anime({
-          autoplay: false,
-          targets: this.$el,
-          opacity: [0, 1],
-          duration: 500,
-          delay: 500,
-          easing: 'linear',
-          begin: () => {
-            this.showValue = true
-            this.$emit('starting')
-          },
-          complete: () => {
-            this.$emit('started')
-          }
-        })
-        this.doStop = this.$anime({
-          autoplay: false,
-          targets: this.$el,
-          opacity: [1, 0],
-          duration: 500,
-          delay: 500,
-          easing: 'linear',
-          begin: () => {
-            this.$emit('stopping')
-          },
-          complete: () => {
-            this.showValue = false
-            this.$emit('stopped')
-          }
-        })
-      }
+    components: { VTransition },
+    props: {
+      show: { type: Boolean, default: false }
     }
   }
 </script>
@@ -174,22 +115,5 @@
         }
   }
    /* cube loader from https://tobiasahlin.com/spinkit/ end */
-
-  .back-gradient {
-    background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
 
 </style>

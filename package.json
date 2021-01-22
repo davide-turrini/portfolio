@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -10,7 +9,12 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
+    "@nuxt/http": "^0.6.2",
     "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/proxy": "^2.1.0",
+    "animejs": "^3.2.1",
+    "chart.js": "^2.9.4",
+    "chartjs-plugin-datalabels": "^0.7.0",
     "core-js": "^3.8.2",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.17.0"
@@ -20,7 +24,6 @@
     "@nuxtjs/tailwindcss": "^3.4.2",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
-    "nuxt-animejs": "^1.2.1",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }

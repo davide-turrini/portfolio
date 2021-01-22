@@ -1,0 +1,115 @@
+[
+  {
+    "welcome": "Welcome to my portfolio",
+    "background": "background.svg",
+    "header": {
+      "title": "Davide Turrini",
+      "headline": "Telecommunications engineering"
+    },
+    "hero": {
+      "landscape": "landscape.jpeg",
+      "profile": "me.jpeg",
+      "quote": {
+        "cit": "We are the witnesses through which the universe becomes conscious of its glory, of its magnificence.",
+        "author": "Alan Watts"
+      }
+    },
+    "experience": [
+      {
+        "company": "Hub Editoriale",
+        "title": "Information Technology Manager",
+        "where": "Verona",
+        "from": "15 Aug 2020",
+        "to": "15 Dec 2020",
+        "description": "I took care of computerizing the company trying to respond to all the daily needs of the employees. It was a great opportunity that allowed me to deal with aspects of the IT world such as database administration, servers, network infrastructure of the two company offices. Search for suppliers, materials, creation of new network infrastructures (new asterisk telephone switchboard and related telephones, new cloud machine park). Convergence of all business technologies. I was able to propose solutions to make the work of all employees more efficient and halve IT costs."
+      },
+      {
+        "company": "Banco BPM",
+        "title": "Software Engineer",
+        "where": "Verona",
+        "from": "15 Apr 2020",
+        "to": "15 Lug 2020",
+        "description": "During this experience I dealt with software development in the banking context. I ended my collaboration by leaving the company a Python script capable of replacing me in almost all my recurring activities."
+      },
+      {
+        "company": "Digitronica.IT",
+        "title": "Software Developer",
+        "where": "Verona",
+        "from": "15 Dec 2018",
+        "to": "15 Apr 2020",
+        "description": "During this experience I worked with a team to give life to the new generation of the company's core business product in the field of physical and logical IT security. I ventured into the frontend development of a web app written in vue, obtaining good results about the UI and excellent results about the software design. I also had the opportunity to work on minor projects for important corporate clients such as A2A (I worked with SSIS, SSAS, SSRS, Necto technologies) and BNL (I worked with C # / .NET technologies)."
+      },
+      {
+        "company": "IM Service Lab",
+        "title": "Data Scientist",
+        "where": "Trento",
+        "from": "15 Jan 2017",
+        "to": "15 Mar 2017",
+        "description": "I have developed an engine for the semantic recognition of telephone speech. The application has been integrated into the company's core business product with reference to the new generation customer care services. The excellent results obtained allowed me to verify my skills in the field of Deep Leaning (Python, Tensorflow) and Data Analysis."
+      }
+    ],
+    "education": [
+      {
+        "school": "University of Trento",
+        "title": "Bachelor's degree in Electronics and Telecommunications Engineering",
+        "score": "108/110",
+        "where": "Trento",
+        "from": "1 Sep 2014",
+        "to": "25 Sep 2017",
+        "description": "I graduated early with a thesis on Deep Learning and Text Analysis. During my university career I was able to collaborate with various university companies in the field of telecommunications, signal analysis and data science (both biomedical and textual oriented). I took 2 advanced courses for radio circuit design. My final 7-month internship allowed me to approach the world of high-level programming (python) obtaining excellent results for the company."
+      }
+    ],
+    "skills": [
+      {
+        "field": "Software Engineering",
+        "comment": "Advanced hands on experience in the field of web application development and design. Specialist in Node.JS, python enthusiast, c/c++ native speaker. Eventually prepared for AMP stacks. My interests cover maths and data analysis.",
+        "tags": "python, node.js, r, cordova, electron, vue js, vuetify, tailwind css, nuxt, html 5, javascript es7, typescript, css, scss, sass, c#, c++, c, bash, opencv, tensorflow, cuda, numpy, numba, wiring,  php, apache, nginx, mysql 8, ms sql server, ssis, ssas, ssrs, postgres sql, sqlite, git, npm"
+      },
+      {
+        "field": "Telecommunications Engineering",
+        "comment": "Knowledge of main communication protocols in their full stack nature. Some basic knowledge about simulations software.",
+        "tags": "tcp/ip, udp, web socket, http, mqtt, i2c, spi, uart, wifi, ble 5.0, arduino core, espruino, feko, comsol 5, cst studio"
+      },
+      {
+        "field": "Electronics Engineering",
+        "comment": "Hands on experience in circuit design and simulations software. I found myself confortable working with main IOT technologies such as ESP32 and ESP8266. My hobbies include making pcb and breaking a lot of cnc heads.",
+        "tags": "eagle cad, pspice, arm cortex, esp8266, esp32, avr atmega, avr attiny, fritzing, flatcam, cncjs, bcnc"
+      },
+      {
+        "field": "Management",
+        "comment": "Knowledge of main server os. Able to set up vpn, databases, vps, load balancing routers, and telephone switches and protect them (the most important thing) by cyber attacks!",
+        "tags": "centos, ubuntu, alpine, freepbx, 3cx, openvpn, wireguard"
+      }
+    ],
+    "contacts": {
+      "whatsapp": "+393477200559",
+      "callmebot": "660540"
+    },
+    "footer": {
+      "copyright": "Copyleft 3021 Davide Turrini - Definitely no rights deserved =D",
+      "links": [
+        {
+          "class": "mdi mdi-phone",
+          "text": "",
+          "href": "tel:+393519201975"
+        }, {
+          "class": "mdi mdi-gmail",
+          "text": "",
+          "href": "mailto:dt.turrini@gmail.com"
+        }, {
+          "class": "mdi mdi-npm",
+          "text": "",
+          "href": "https://www.npmjs.com/~davide-turrini"
+        }, {
+          "class": "mdi mdi-github",
+          "text": "",
+          "href": "https://github.com/davide-turrini"
+        }, {
+          "class": "mdi mdi-linkedin",
+          "text": "",
+          "href": "https://www.linkedin.com/in/davide-turrini-08b925130"
+        }
+      ]
+    }
+  }
+]
