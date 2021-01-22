@@ -19,7 +19,6 @@ export default {
   // Modules (https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modules)
   modules: [
     '@nuxt/http', // Nuxt http - https://http.nuxtjs.org
-    '@nuxtjs/proxy', // Proxy
     '@nuxt/content', // Nuxt Content - https://content.nuxtjs.org
     '@nuxtjs/device', // Device detection - https://github.com/nuxt-community/device-module
     'nuxt-i18n' // Internationalization support - https://i18n.nuxtjs.org/
@@ -45,14 +44,5 @@ export default {
   // Google Analytics configuration
   googleAnalytics: {
     id: 'UA-12301-2'
-  },
-  // Proxy for callmebot
-  proxy: {
-    '/callmebot': {
-      target: 'https://api.callmebot.com',
-      pathRewrite: {
-        '^/callmebot' : '/'
-      }
-    }
   }
 }

@@ -89,7 +89,7 @@
     methods: {
       send () {
         let msg = this.$t('onDate') + '\n' + ((new Date()).toUTCString()) + '\n\n[ ' + this.from.value + ' ]\n\n' + this.$t('wrote') + ':\n\n' + this.message.value
-        this.$http.$get('/callmebot/whatsapp.php?phone=' + this.whatsapp +'&text='+encodeURI(msg)+'&apikey='+this.callmebot)
+        this.$http.$get('https://cors-anywhere.herokuapp.com/api.callmebot.com/whatsapp.php?phone=' + this.whatsapp +'&text='+encodeURI(msg)+'&apikey='+this.callmebot)
         this.success = true
         this.$nextTick(()=>{
           this.message.value = ''

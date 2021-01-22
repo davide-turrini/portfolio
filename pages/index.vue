@@ -22,7 +22,6 @@
 </template>
 
 <script>
-  window.onerror = () => true // this suppress all errors in console :)
   import VHeader from '../components/header'
   import VLoader from '../components/loader'
   import VPointer from '../components/pointer'
@@ -52,7 +51,14 @@
       return {
         content: null,
         show: {
-          welcome: false, background: false, pointer: false, header: false, main: false, contacts: false, languageSwitcher: false, footer: false
+          welcome: false,
+          background: false,
+          pointer: false,
+          header: false,
+          main: false,
+          contacts: false,
+          languageSwitcher: false,
+          footer: false
         }
       }
     },
