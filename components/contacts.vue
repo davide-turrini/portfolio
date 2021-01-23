@@ -3,7 +3,7 @@
     <div v-if="show">
       <button class="fixed z-20 bottom-0 right-0 mr-10 mb-10 w-16 h-16 rounded-full border-2 border-gray-800 bg-gray-900 text-gray-700 mdi mdi-message text-3xl shadow-xl animate__animated animate__jello animate__delay-2s focus:outline-none hover:text-white hover:border-white v-pointer v-pointer-link transition duration-500" @click="open"></button>
       <v-transition enter-active-class="animate__animated animate__zoomInDown" :leave-active-class="'animate__animated ' + (success ? 'animate__zoomOutUp' : 'animate__rotateOutDownLeft')">
-        <div v-if="modal" class="fixed z-30 top-0 left-0 w-screen h-screen bg-transparent flex justify-end items-center p-20" @click="close">
+        <div v-if="modal" class="fixed z-30 top-0 left-0 w-screen h-screen bg-transparent flex justify-end items-center p-5 md:p-20" @click="close">
           <div class="absolute z-40 bg-gradient-to-b from-gray-900 to-gray-800 py-6 px-6 shadow-xl rounded-xl text-gray-400 relative" @click.stop>
             <h2 class="text-2xl font-medium title-font">Get in contact</h2>
             <p class="mb-5 text-gray-600">I'll contact you as soon as possible</p>
@@ -71,7 +71,6 @@
       }
     },
     mounted () {
-
       this.$watch('from.value', (value) => {
         this.from.isValid =
           // validating phone
@@ -79,7 +78,6 @@
           // validating email
           (/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value))
       })
-
       this.$watch('message.value', (value) => {
         this.message.isValid = (
           value.length > 0

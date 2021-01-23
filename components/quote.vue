@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="mx-24 text-center text-gray-100 text-xl font-sans -mt-12">
+    <p class="mx-5 md:mx-24 text-center text-gray-100 text-xl font-sans -mt-12">
       <span class="text-gray-500 text-4xl italic">“ </span> {{ cit }} <span class="text-gray-500 text-4xl italic">”</span>
     </p>
     <p class="text-center text-gray-500 text-xl italic">{{ author }}</p>

@@ -46,7 +46,22 @@
         ],
       }
     },
-    components: { VLanguageSwitcher, VHeader, VQuote, VLoader, VPointer, VWelcome, VBackground, VMain, VContacts, VHero, VExperience, VEducation, VSkills, VFooter },
+    components: {
+      VLanguageSwitcher,
+      VHeader,
+      VQuote,
+      VLoader,
+      VPointer,
+      VWelcome,
+      VBackground,
+      VMain,
+      VContacts,
+      VHero,
+      VExperience,
+      VEducation,
+      VSkills,
+      VFooter
+    },
     data () {
       return {
         content: null,

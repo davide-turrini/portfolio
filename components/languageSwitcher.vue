@@ -6,7 +6,7 @@
         :class="{
           'text-gray-300 border-gray-300': (locale.code === $i18n.locale),
           'text-gray-500 border-gray-500': (locale.code !== $i18n.locale)
-          }"
+        }"
         v-for="locale in allLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)">{{ locale.code }}</nuxt-link>

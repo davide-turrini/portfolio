@@ -1,10 +1,10 @@
 <template>
   <v-transition>
     <header v-if="show" class="relative w-full flex flex-col justify-center items-center py-16">
-      <h1 class="text-7xl font-gruppo text-white">
+      <h1 class="text-5xl md:text-7xl font-gruppo text-white text-center">
         <span v-for="(letter,l) in title.split('')" :key="'h1-span-'+l">{{ letter }}</span>
       </h1>
-      <h2 class="text-xl font-sans uppercase text-gray-500 tracking-widest overflow-hidden">
+      <h2 class="md:text-xl font-sans uppercase text-gray-500 tracking-widest overflow-hidden text-center">
         <span v-for="(letter,l) in headline.split('')" :key="'h2-span-'+l">{{ letter }}</span>
       </h2>
     </header>

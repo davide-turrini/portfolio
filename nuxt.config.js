@@ -3,6 +3,9 @@ export default {
   ssr: false,
   loading: false,
   // External resources
+  server: {
+    host: '0.0.0.0'
+  },
   head: {
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Gruppo&display=swap' },

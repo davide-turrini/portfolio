@@ -1,8 +1,8 @@
 <template>
   <v-transition>
     <div v-if="show" class="fixed z-40 h-screen w-screen flex flex-col justify-center items-center bg-gray-900">
-      <h5 class="flex flex-col justify-center items-center text-9xl">
-        <span class="absolute bg-clip-text text-transparent awesome-gradient opacity-0" v-for="(word,w) in text.split(' ')" :key="'h5-span-'+w">
+      <h5 class="flex flex-col justify-center items-center text-5xl md:text-9xl">
+        <span class="absolute bg-clip-text text-transparent bg-awesome-gradient opacity-0" v-for="(word,w) in text.split(' ')" :key="'h5-span-'+w">
           {{ word }}
         </span>
       </h5>

@@ -1,7 +1,7 @@
 <template>
   <v-transition @after-enter="$emit('ok')">
     <span v-if="$device.isDesktop && show" class="fixed z-50 transform -translate-y-1/2 -translate-x-1/2 pointer-events-none" :class="{
-      'text-transparent bg-clip-text awesome-gradient mdi mdi-radiobox-blank text-4xl': triggers['v-pointer-link'],
+      'text-transparent bg-clip-text bg-awesome-gradient mdi mdi-radiobox-blank text-4xl': triggers['v-pointer-link'],
       'text-white mdi mdi-arrow-left text-2xl': triggers['v-pointer-back'],
       'text-white mdi mdi-circle text-xl': !(triggers['v-pointer-link'] || triggers['v-pointer-back'])}" :style="'top: ' + top + '; left: ' + left + '; transition: font-size 300ms ease-in;'">
       </span>

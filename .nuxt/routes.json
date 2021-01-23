@@ -3,24 +3,28 @@
     "name": "index___de",
     "path": "/de",
     "component": "/Users/Davide/Desktop/portfolio/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_84036f72"
   },
   {
     "name": "index___fr",
     "path": "/fr",
     "component": "/Users/Davide/Desktop/portfolio/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_84036f72"
   },
   {
     "name": "index___it",
     "path": "/it",
     "component": "/Users/Davide/Desktop/portfolio/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_84036f72"
   },
   {
     "name": "index___en",
     "path": "/",
     "component": "/Users/Davide/Desktop/portfolio/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_84036f72"
   }
 ]

@@ -1,6 +1,6 @@
 <template>
   <v-transition :duration="2000" enter-active-class="custom__growUp" @after-enter="$emit('ok')">
-    <main v-if="show" class="container relative z-10 rounded-2xl bg-gray-900 overflow-hidden">
+    <main v-if="show" class="container relative z-10 rounded-2xl bg-gray-900 md:overflow-hidden">
       <slot/>
     </main>
   </v-transition>

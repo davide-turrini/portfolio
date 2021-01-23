@@ -1,7 +1,7 @@
 <template>
   <v-transition @after-leave="$emit('ok')">
     <div v-if="show">
-      <div class="fixed top-0 left-0 z-50 w-screen h-screen flex flex-col justify-center items-center awesome-gradient">
+      <div class="fixed top-0 left-0 z-50 w-screen h-screen flex flex-col justify-center items-center bg-awesome-gradient">
         <!-- cube loader from https://tobiasahlin.com/spinkit/ start -->
         <div class="sk-folding-cube">
           <div class="sk-cube1 sk-cube"></div>

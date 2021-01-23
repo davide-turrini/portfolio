@@ -12,7 +12,7 @@
             {{ $t('at') }}
             <span class="text-gray-300">{{ item['company'] }}</span>
           </h4>
-          <p class="leading-relaxed font-light text-gray-500">{{ item['description'] }}</p>
+          <p class="leading-relaxed font-light text-gray-500 text-justify md:text-left">{{ item['description'] }}</p>
         </div>
       </div>
     </div>
