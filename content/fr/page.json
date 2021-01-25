@@ -1,61 +1,115 @@
 [
   {
-    "background": "background.jpeg",
-    "title": "Davide Turrini",
-    "headline": "telecommunications engineering",
-    "landscape": "landscape.jpeg",
-    "photo": "me.jpeg",
-    "quote": {
-      "cit": "We are the witnesses through which the universe becomes conscious of its glory, of its magnificence.",
-      "author": "Alan Watts"
+    "welcome": "Bienvenue dans mon portfolio",
+    "background": "background.svg",
+    "header": {
+      "title": "Davide Turrini",
+      "headline": "Ingénierie des télécommunications"
+    },
+    "hero": {
+      "landscape": "landscape.jpeg",
+      "profile": "me.jpeg",
+      "quote": {
+        "cit": "We are the witnesses through which the universe becomes conscious of its glory, of its magnificence.",
+        "author": "Alan Watts"
+      }
     },
     "experience": [
       {
         "company": "Hub Editoriale",
-        "job title": "Information Technology Manager",
+        "title": "Information Technology Manager",
         "where": "Verona",
-        "from": "15 Aug 2020",
-        "to": "15 Dec 2020",
-        "description": "I took care of computerizing the company trying to respond to all the daily needs of the employees. it was a great chance that allowed me to be able to deal with aspects of the IT world such as database administration, servers, network infrastructure on the two company offices. Search for suppliers, materials, creation of new network infrastructures (new asterisk telephone switchboard and related telephones, new cloud machine park). Convergence of all business technologies. I was able to propose solutions to make the work of all employees more efficient and halve IT costs."
+        "from": "15 Août 2020",
+        "to": "15 Déc. 2020",
+        "description": "J'ai pris en charge l'informatisation de l'entreprise en essayant de répondre à tous les besoins quotidiens des employés. Cette opportunité m'a permis de traiter des aspects du monde informatique tels que l'administration des bases de données, les serveurs, l'infrastructure réseau des deux bureaux de l'entreprise. Recherche de fournisseurs, de matériels, création de nouvelles infrastructures réseaux (nouveau standard téléphonique astérisque et téléphones associés, nouveau parc de machines cloud) et la convergence de toutes les technologies métiers. J'ai pu proposer des solutions pour rendre le travail de tous les collaborateurs plus efficace et réduire de moitié les coûts informatiques."
       },
       {
         "company": "Banco BPM",
-        "job title": "Software Engineer",
+        "title": "Software Engineer",
         "where": "Verona",
-        "from": "15 Apr 2020",
-        "to": "15 Lug 2020",
-        "description": "During this experience I dealt with software development in the banking context. I ended my collaboration by leaving the company a Python script capable of replacing me in almost all my recurring activities."
+        "from": "4 Mai 2020",
+        "to": "10 Août 2020",
+        "description": "Au cours de cette expérience, j'ai traité du développement logiciel dans le contexte bancaire. J'ai mis fin à la collaboration avec l'entreprise en créant un script python capable de traduire tous les journaux d'activités suspectes écrits par les principaux serveurs de production en rapports lisibles par l'homme prêts à être partagés avec d'autres services (ex: anti-fraudes). Ce fut une excellente occasion d'en savoir plus sur les entreprises de haut niveau."
       },
       {
         "company": "Digitronica.IT",
-        "job title": "Software Developer",
+        "title": "Software Developer",
         "where": "Verona",
-        "from": "15 Dec 2018",
-        "to": "15 Apr 2020",
-        "description": "During this work experience I worked as a team to give life to the new generation of the company's core business product in the field of physical and logical IT security. I ventured into the frontend development of a web app written in vue, obtaining good results about the UI and excellent results about the software design. I also had the opportunity to work on minor projects for important corporate clients such as A2A (I worked with SSIS, SSAS, SSRS, Necto technologies) and BNL (I worked with C # / .NET technologies)."
+        "from": "3 Déc. 2018",
+        "to": "4 Avril 2020",
+        "description": "Au cours de cette expérience, j'ai travaillé avec une équipe pour donner vie à la nouvelle génération du cœur de métier de l'entreprise dans le domaine de la sécurité informatique physique et logique. Je me suis aventuré dans le développement frontend d'une application Web écrite en vue, obtenant de bons résultats sur l'interface utilisateur et d'excellents résultats sur la conception du logiciel. J'ai également eu l'opportunité de travailler sur des projets mineurs pour d'importants clients de haut niveau tels que A2A (j'ai travaillé avec les technologies SSIS, SSAS, SSRS, Necto) et BNL (j'ai travaillé avec les technologies C # / .NET)."
       },
       {
         "company": "IM Service Lab",
-        "job title": "Data Scientist",
+        "title": "Data Scientist",
         "where": "Trento",
-        "from": "15 Jan 2017",
-        "to": "15 Mar 2017",
-        "description": "I have developed an engine for the semantic recognition of telephone speech. The application should then have been integrated into the company's core business product with reference to the new generation customer care services. The excellent results obtained allowed me to verify my skills in the field of Deep Leaning (Python, Tensorflow) and Data Analysis."
+        "from": "15 Janv. 2017",
+        "to": "15 Mars 2017",
+        "description": "J'ai développé un moteur de reconnaissance sémantique de la parole téléphonique. L'application a été intégrée au cœur de métier de l'entreprise en référence aux services d'assistance à la clientèle de nouvelle génération. Les excellents résultats obtenus m'ont permis de vérifier mes compétences dans le domaine du Deep Leaning (Python, Tensorflow) et de l'analyse de données."
       }
     ],
     "education": [
       {
-        "school": "University of Trento",
-        "study": "Bachelor's degree in Electronics and Telecommunications Engineering",
+        "school": "Université de Trento",
+        "title": "Baccalauréat en génie électronique et des télécommunications",
         "score": "108/110",
         "where": "Trento",
-        "from": "1 Sep 2014",
-        "to": "25 Sep 2017",
-        "description": ""
+        "from": "1 Sept. 2014",
+        "to": "25 Sept. 2017",
+        "description": "J'ai obtenu mon diplôme très tôt avec une thèse sur l'apprentissage profond et l'analyse de texte. Au cours de ma carrière universitaire, j'ai pu collaborer avec diverses entreprises liées à l'université dans le domaine des télécommunications, de l'analyse du signal et de la science des données (à la fois biomédicales et textuelles). J'ai suivi 2 cours avancés pour la conception de circuits RF. Mon dernier stage de 7 mois m'a permis d'approcher le monde de la programmation de haut niveau (python) en obtenant d'excellents résultats. Vous avez 30/30 en cours de tlc, de mathématiques, de codage et autres"
       }
     ],
-    "hobby": [
-
-    ]
+    "skills": [
+      {
+        "field": "Software Engineering",
+        "comment": "Expérience pratique avancée dans le domaine du développement et de la conception d'applications Web. Spécialiste en Node.JS, passionné de python, locuteur natif c ++. Finalement préparé pour les stack AMP.",
+        "tags": "python, node.js, r, cordova, electron, vue js, vuetify, tailwind css, nuxt, html 5, javascript es7, typescript, css, scss, sass, c#, c++, c, bash, opencv, tensorflow, cuda, numpy, numba, wiring,  php, apache, nginx, mysql 8, ms sql server, ssis, ssas, ssrs, postgres sql, sqlite, git, npm, ci/cd, devops, netlify, aws, heroku"
+      },
+      {
+        "field": "Telecommunications Engineering",
+        "comment": "Connaissance des principaux protocoles de communication dans leur nature complète. Quelques connaissances de base sur les logiciels de simulation.",
+        "tags": "tcp/ip, udp, web socket, http, mqtt, i2c, spi, uart, wifi, ble 5.0, arduino core, espruino, feko, comsol 5, cst studio"
+      },
+      {
+        "field": "Electronics Engineering",
+        "comment": "Expérience pratique de la conception de circuits et des logiciels de simulation. Je me suis retrouvé à l'aise avec les principales technologies IOT telles que ESP32 et ESP8266. Mes hobbies incluent la fabrication de circuits imprimés et le cassage de nombreuses têtes CNC.",
+        "tags": "eagle cad, pspice, arm cortex, esp8266, esp32, avr atmega, avr attiny, fritzing, flatcam, cncjs, bcnc"
+      },
+      {
+        "field": "Management",
+        "comment": "Connaissance du système d'exploitation du serveur principal. Capable de configurer des VPN, des bases de données, des vps, des routeurs d'équilibrage de charge et des commutateurs téléphoniques et de les protéger (la chose la plus importante) contre les cyberattaques!",
+        "tags": "centos, ubuntu, alpine, freepbx, 3cx, openvpn, wireguard"
+      }
+    ],
+    "contacts": {
+      "whatsapp": "+393477200559",
+      "callmebot": "660540"
+    },
+    "footer": {
+      "copyright": "Copyleft 3021 Davide Turrini - Definitely no rights deserved =D",
+      "links": [
+        {
+          "class": "mdi mdi-phone",
+          "text": "",
+          "href": "tel:+393477200559"
+        }, {
+          "class": "mdi mdi-gmail",
+          "text": "",
+          "href": "mailto:dt.turrini@gmail.com"
+        }, {
+          "class": "mdi mdi-npm",
+          "text": "",
+          "href": "https://www.npmjs.com/~davide-turrini"
+        }, {
+          "class": "mdi mdi-github",
+          "text": "",
+          "href": "https://github.com/davide-turrini"
+        }, {
+          "class": "mdi mdi-linkedin",
+          "text": "",
+          "href": "https://www.linkedin.com/in/davide-turrini"
+        }
+      ]
+    }
   }
 ]

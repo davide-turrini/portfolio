@@ -7,6 +7,14 @@ export default {
     host: '0.0.0.0'
   },
   head: {
+      script: [
+        {
+          type: 'text/javascript',
+          src: 'https://platform.linkedin.com/badges/js/profile.js',
+          async: true,
+          defer: true
+        }
+      ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Gruppo&display=swap' },
       { rel: 'stylesheet', href: '//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css' },

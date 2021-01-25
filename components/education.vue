@@ -8,8 +8,8 @@
           <span class="mt-1 text-gray-400 text-sm capitalize">{{ $t('score') }}: {{ item['score'] }}</span>
         </div>
         <div class="md:flex-grow">
-          <h4 class="text-xl text-gray-400 title-font mb-2">{{ item['title'] }}</h4>
-          <h5 class="text-xl text-gray-300 title-font mb-2">{{ item['school'] }}</h5>
+          <h4 class="text-xl text-gray-400 title-font mb-2 capitalize">{{ item['title'] }}</h4>
+          <h5 class="text-xl text-gray-300 title-font mb-2 capitalize">{{ item['school'] }}</h5>
           <p class="leading-relaxed font-light text-gray-500 md:text-left text-justify">{{ item['description'] }}</p>
         </div>
       </div>

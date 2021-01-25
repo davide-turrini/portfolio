@@ -64,7 +64,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"link":[{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Gruppo&display=swap"},{"rel":"stylesheet","href":"\u002F\u002Fcdn.materialdesignicons.com\u002F5.4.55\u002Fcss\u002Fmaterialdesignicons.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fanimate.css\u002F4.1.1\u002Fanimate.min.css"}],"meta":[],"style":[],"script":[]},
+    head: {"script":[{"type":"text\u002Fjavascript","src":"https:\u002F\u002Fplatform.linkedin.com\u002Fbadges\u002Fjs\u002Fprofile.js","async":true,"defer":true}],"link":[{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Gruppo&display=swap"},{"rel":"stylesheet","href":"\u002F\u002Fcdn.materialdesignicons.com\u002F5.4.55\u002Fcss\u002Fmaterialdesignicons.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fanimate.css\u002F4.1.1\u002Fanimate.min.css"}],"meta":[],"style":[]},
 
     router,
     nuxt: {

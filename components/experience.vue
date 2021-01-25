@@ -8,9 +8,9 @@
         </div>
         <div class="md:flex-grow">
           <h4 class="text-2xl text-gray-500 title-font mb-2">
-            <span class="text-gray-400">{{ item['title'] }}</span>
-            {{ $t('at') }}
-            <span class="text-gray-300">{{ item['company'] }}</span>
+            <span class="text-gray-400 capitalize">{{ item['title'] }}</span>
+            <span class="lowercase">{{ $t('at') }}</span>
+            <span class="text-gray-300 capitalize">{{ item['company'] }}</span>
           </h4>
           <p class="leading-relaxed font-light text-gray-500 text-justify md:text-left">{{ item['description'] }}</p>
         </div>

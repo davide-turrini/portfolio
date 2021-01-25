@@ -19,25 +19,25 @@
         "company": "Hub Editoriale",
         "title": "Information Technology Manager",
         "where": "Verona",
-        "from": "15 Aug 2020",
+        "from": "24 Aug 2020",
         "to": "15 Dec 2020",
-        "description": "I took care of computerizing the company trying to respond to all the daily needs of the employees. It was a great opportunity that allowed me to deal with aspects of the IT world such as database administration, servers, network infrastructure of the two company offices. Search for suppliers, materials, creation of new network infrastructures (new asterisk telephone switchboard and related telephones, new cloud machine park) and the convergence of all business technologies. I was able to propose solutions to make the work of all employees more efficient and halve IT costs."
+        "description": "I took care of computerizing the company trying to respond to all the daily needs of the employees. This opportunity allowed me to deal with aspects of the IT world such as database administration, servers, network infrastructure of the two company offices. Search for suppliers, materials, creation of new network infrastructures (new asterisk telephone switchboard and related telephones, new cloud machine park) and the convergence of all business technologies. I was able to propose solutions to make the work of all employees more efficient and halve IT costs."
       },
       {
         "company": "Banco BPM",
         "title": "Software Engineer",
         "where": "Verona",
-        "from": "15 Apr 2020",
-        "to": "15 Lug 2020",
-        "description": "During this experience I dealt with software development in the banking context. I ended the collaboration with the company by creating a python script capable of translating all suspicious activity logs written by main production servers into human readable reports ready to be shared with others departments (ie: anti-frauds). It was a great opportunity to learn more about enterprise level companies."
+        "from": "4 May 2020",
+        "to": "10 Aug 2020",
+        "description": "During this experience I dealt with software development in the banking context. I ended the collaboration with the company by creating a python script capable of translating all suspicious activity logs written by main production servers into human readable reports ready to be shared with others departments (ie: anti-frauds). It was a great opportunity to learn more about high level companies."
       },
       {
         "company": "Digitronica.IT",
         "title": "Software Developer",
         "where": "Verona",
-        "from": "15 Dec 2018",
-        "to": "15 Apr 2020",
-        "description": "During this experience I worked with a team to give life to the new generation of the company's core business product in the field of physical and logical IT security. I ventured into the frontend development of a web app written in vue, obtaining good results about the UI and excellent results about the software design. I also had the opportunity to work on minor projects for important corporate clients such as A2A (I worked with SSIS, SSAS, SSRS, Necto technologies) and BNL (I worked with C # / .NET technologies)."
+        "from": "3 Dec 2018",
+        "to": "4 Apr 2020",
+        "description": "During this experience I worked with a team to give life to the new generation of the company's core business product in the field of physical and logical IT security. I ventured into the frontend development of a web app written in vue, obtaining good results about the UI and excellent results about the software design. I also had the opportunity to work on minor projects for important high level clients such as A2A (I worked with SSIS, SSAS, SSRS, Necto technologies) and BNL (I worked with C # / .NET technologies)."
       },
       {
         "company": "IM Service Lab",
@@ -107,7 +107,7 @@
         }, {
           "class": "mdi mdi-linkedin",
           "text": "",
-          "href": "https://www.linkedin.com/in/davide-turrini-08b925130"
+          "href": "https://www.linkedin.com/in/davide-turrini"
         }
       ]
     }
